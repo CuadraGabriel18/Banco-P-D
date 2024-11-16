@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+   <head>
+      <title>Problema Pueblo Desconocido</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+   </head>
+   
+   <body style="background-image: url('banco.avif'); height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+    <div class="text-center fs-1 mt-3">
+      <h1 style="color: rgb(25, 255, 121);">BANCO PUEBLO DESCONOCIDO</h1>
+    </div>
+
+      <form>
+
+      <div class="container mt-4" style="background: transparent; border: 5px solid rgb(255, 147, 23); border-radius: 20px; backdrop-filter: blur(3px); " >
+        <form>
+
+          <div class=" row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(255, 238, 0);">Nombre Del Cliente</label>
+            <div class="col-6">
+              <input type="text" style="background-color: rgb(151, 255, 229);" class="form-control" name="txtNomClien" placeholder="Ingrese Nombre Del Cliente">
+            </div>
+          </div>
+
+          <div class="row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(255, 238, 0);">Limite De Credito Actual</label>
+            <div class="col-6">
+              <input type="number" style="background-color: rgb(151, 255, 229);" class="form-control" name="txtLimDeCred" placeholder="Ingrese Limite De Cerdito Actual">
+            </div>
+          </div>
+
+          <div class="row mt-4 g-3 justify-content-center">
+            <label class="form-label col-3 fs-4" style="color: rgb(255, 238, 0);" >Tipo De Tarjeta</label>
+            <div class="col-6">
+              <select name="cmbTipoDeTarjeta" class="form-select" size="1" style="background-color: rgb(151, 255, 229);">
+                <option value="No Selecciono Tipo De Tarjeta">--Seleccione--</option>
+                <option value="Tipo 1">Tipo 1</option>
+                <option value="Tipo 2">Tipo 2</option>
+                <option value="Tipo 3">Tipo 3</option>
+                <option value="Otro Tipo">Otro Tipo</option>
+             </select> 
+            </div>
+          </div>
+
+          <div class="row mt-4 g-3 justify-content-center" >
+            <div class="col-2 text-center">
+              <button type="reset"  class="btn btn-info" style="background-color: rgb(255, 53, 53);" >Borrar</button>
+            </div>
+            
+            <div class="col-1 text-center">
+              <button type="button" class="btn btn-info" style="background-color: rgb(100, 255, 53);" onclick="enviarDatos()">Registrar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      </form>
+      </script>
+      <!-- Enlazar el archivo js con html -->
+      <script src="js/funciones.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
